@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#ECF7C9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <!-- CHECKBOX -->
+        <CheckBox
+            android:id="@+id/cbGiaoDich"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:buttonTint="#668B55"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- TRANSACTION INFORMATION -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPhanLoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ăn uống"
+                android:textColor="#263B30"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvMaGiaoDich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã giao dịch: #1"
+                android:textColor="#777777"
+                android:textSize="11sp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/tvLoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiêu"
+                android:textColor="#D04444"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/tvNgayGio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04/11/2026 - 08:30"
+                android:textColor="#555555"
+                android:textSize="12sp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/tvSoTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-50.000 đ"
+                android:textColor="#D04444"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+        <!-- EDIT AND DELETE BUTTONS -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="8dp">
+
+            <!-- EDIT -->
+            <ImageButton
+                android:id="@+id/btnSua"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_edit"
+                android:contentDescription="Sửa giao dịch"
+                android:padding="7dp"
+                android:scaleType="fitCenter"/>
+
+            <!-- DELETE -->
+            <ImageButton
+                android:id="@+id/btnXoa"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="Xóa giao dịch"
+                android:padding="7dp"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

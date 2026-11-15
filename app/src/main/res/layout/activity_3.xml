@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THỐNG KÊ GIAO DỊCH"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#263B63"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- MONTH AND YEAR -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn tháng và năm"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/edtThang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Tháng"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <EditText
+                android:id="@+id/edtNam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:hint="Năm"
+                android:inputType="number"
+                android:maxLength="4"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnThongKe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XEM THỐNG KÊ"
+            android:backgroundTint="#B5A8E8"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"/>
+
+        <!-- BACK BUTTON -->
+        <Button
+            android:id="@+id/btnQuayLaiThongKe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUAY LẠI"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#263B63"
+            android:layout_marginBottom="12dp"/>
+
+
+        <!-- TOTAL INCOME -->
+        <TextView
+            android:id="@+id/tvThongKeThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng thu nhập: 0 VNĐ"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#269B62"
+            android:background="#E1F5E9"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- TOTAL EXPENSE -->
+        <TextView
+            android:id="@+id/tvThongKeChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng chi tiêu: 0 VNĐ"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#D04444"
+            android:background="#FCE7E7"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- BALANCE -->
+        <TextView
+            android:id="@+id/tvSoDu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số dư: 0 VNĐ"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#263B63"
+            android:background="#E5EAF5"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- COUNT -->
+        <TextView
+            android:id="@+id/tvSoGiaoDich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng số giao dịch: 0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- HISTORY TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DANH SÁCH GIAO DỊCH"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#263B63"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- TRANSACTION LIST -->
+        <LinearLayout
+            android:id="@+id/layoutDanhSachThongKe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</ScrollView>

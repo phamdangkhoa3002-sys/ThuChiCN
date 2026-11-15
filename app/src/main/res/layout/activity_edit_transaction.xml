@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SỬA GIAO DỊCH"
+            android:textColor="#263B63"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- MÃ GIAO DỊCH -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã giao dịch"
+            android:textStyle="bold"
+            android:textColor="#263B63"/>
+
+        <TextView
+            android:id="@+id/tvMaSua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#1"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="#E5E9F1"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- LOẠI GIAO DỊCH -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loại giao dịch"
+            android:textStyle="bold"
+            android:textColor="#263B63"/>
+
+        <RadioGroup
+            android:id="@+id/rgLoaiSua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbThuSua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu nhập"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbChiSua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiêu"
+                android:layout_marginStart="20dp"/>
+
+        </RadioGroup>
+
+        <!-- SỐ TIỀN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số tiền (VNĐ)"
+            android:textStyle="bold"
+            android:textColor="#263B63"/>
+
+        <EditText
+            android:id="@+id/edtSoTienSua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập số tiền"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"/>
+
+        <!-- PHÂN LOẠI -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phân loại"
+            android:textStyle="bold"
+            android:textColor="#263B63"/>
+
+        <EditText
+            android:id="@+id/edtPhanLoaiSua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ví dụ: Ăn uống, Lương..."
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"/>
+
+        <!-- NGÀY -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày giao dịch"
+            android:textStyle="bold"
+            android:textColor="#263B63"/>
+
+        <Button
+            android:id="@+id/btnNgaySua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn ngày"
+            android:backgroundTint="#B5A8E8"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- GIỜ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giờ giao dịch"
+            android:textStyle="bold"
+            android:textColor="#263B63"/>
+
+        <Button
+            android:id="@+id/btnGioSua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn giờ"
+            android:backgroundTint="#B5A8E8"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- SAVE -->
+        <Button
+            android:id="@+id/btnLuuSua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LƯU THAY ĐỔI"
+            android:backgroundTint="#B5A8E8"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnQuayLaiSua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUAY LẠI"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#263B63"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</ScrollView>
